@@ -24,6 +24,10 @@ section#section-2,section#section-3 {
   margin: 0 auto;
 }
 
+section#section-4 {
+  padding-bottom: 12em;
+}
+
 
 
 section.dark-bg {
@@ -42,7 +46,7 @@ p {
 h1 {
   font-size:8vw;
   line-height: 1.1;
-  margin-bottom: .3em;
+  margin: .3em 0;
 
 }
 
@@ -90,11 +94,15 @@ h6 {
   color:#fae056;
 }
 
+.backpacks {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 a.button {
   padding:.6em 1em;
-  background:#fae056;
-  color:#5e17eb;
-  border:4px solid #5e17eb;
+  background:#5e17eb;
+  color:#fff;
   border-radius: 100px;
   text-decoration:none;
   display:inline-block;
@@ -127,13 +135,14 @@ ul.ul-columns {
   list-style:none;
   padding:0;
   display:flex;
+  align-items: flex-end;
 }
 
 ul.ul-columns li{
   display:block;
   width:100%;
   text-align: center;
-
+  margin:10px;
 }
 
 ul.ul-grid {
@@ -241,6 +250,7 @@ div.z-fix p{
 }
 
 span.description {
+  margin-top:1em;
   display: block;
   font-weight: bold;
 }
@@ -254,7 +264,7 @@ span.amount {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   ul.item-list {
     columns:1;
     column-gap: 0px;
