@@ -16,15 +16,18 @@ section#section-1 {
   background-position:center right;
   background-repeat: no-repeat;
   padding-bottom:5em;
+  position: relative;
 }
 
-section#section-3 {
-  background-color: #FCE592;
-  color:#5e17eb;
+section#section-2,section#section-3 {
+  max-width: 900px;
+  margin: 0 auto;
 }
+
+
 
 section.dark-bg {
-  background: black;
+  background: #22045e;
   text-align: center;
 }
 
@@ -34,13 +37,10 @@ p,li {
 }
 
 p {
-  max-width: 800px;
-  margin: 2em auto;
 }
 
 h1 {
   font-size:8vw;
-  max-width: 8em;
   line-height: 1.1;
   margin-bottom: .3em;
 
@@ -111,7 +111,7 @@ ul.item-list {
   column-gap: 80px;
   list-style: none;
   padding:0;
-  color:black;
+
 }
 
 ul.item-list li {
@@ -133,6 +133,7 @@ ul.ul-columns li{
   display:block;
   width:100%;
   text-align: center;
+
 }
 
 ul.ul-grid {
@@ -145,7 +146,7 @@ ul.ul-grid {
 }
 
 ul.ul-grid li:nth-child(4){
-   grid-area: 1 / 2 / 4 / 5; 
+   grid-area: 1 / 2 / 4 / 5;
 }
 
 @keyframes badgespin{
@@ -181,7 +182,8 @@ div.svg-illustration {
   width:55%;
   position:absolute;
   right:0px;
-  top:-10px;
+  top:50%;
+  transform: translateY(-50%);
 }
 
 div.svg-illustration img{
@@ -229,6 +231,13 @@ div.svg-illustration img{
 div.z-fix {
   position:relative;
   z-index: 2;
+  max-width: 45vw
+}
+
+div.z-fix p{
+  color:#111;
+  font-size: 18px;
+  line-height: 24px
 }
 
 span.description {
@@ -242,4 +251,32 @@ span.backpacknumber{
 
 span.amount {
   display: block;
+}
+
+
+@media only screen and (max-width: 700px) {
+  ul.item-list {
+    columns:1;
+    column-gap: 0px;
+  }
+  ul.ul-grid {
+    list-style:none;
+    padding:0;
+    display: block;
+  }
+  ul.ul-columns {
+    display:block;
+  }
+  div.svg-illustration {
+    width:100%;
+    position:relative;
+    right:auto;
+    top:auto;
+    transform: translateY(0%);
+  }
+  div.z-fix {
+    position:relative;
+    z-index: 2;
+    max-width: 100%;
+  }
 }
