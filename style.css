@@ -202,7 +202,7 @@ div.svg-illustration img{
 
 .svg-illustration g{
   transform-origin:center;
-  animation:floaton 8s infinite ease-in-out;
+  animation:floaton 5s infinite ease-in-out;
 }
 
 .svg-illustration g[data-name="papers"]{
@@ -227,13 +227,13 @@ div.svg-illustration img{
 
 @keyframes floaton{
   0% {
-    transform:translateY(5px);
+    transform:rotate(-1deg);
   }
   50% {
-    transform:translateY(-5px);
+    transform:rotate(1deg);
   }
   100% {
-    transform:translateY(5px);
+    transform:rotate(-1deg);
   }
 }
 
