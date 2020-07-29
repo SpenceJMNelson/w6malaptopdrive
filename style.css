@@ -135,6 +135,19 @@ ul.ul-columns li{
   text-align: center;
 }
 
+ul.ul-grid {
+  list-style:none;
+  padding:0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+}
+
+ul.ul-grid li:nth-child(4){
+   grid-area: 1 / 2 / 4 / 5; 
+}
+
 @keyframes badgespin{
   from {
     transform:rotate(0deg)
