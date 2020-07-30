@@ -203,15 +203,13 @@ ul.ul-grid li:nth-child(4){
   position:absolute;
   right:20px;
   top:20px;
-  width:16%;
+  width:20%;
 
 }
 
 .w6ma-icon svg {
   width:100%;
   height:auto;
-
-
 }
 
 div.svg-illustration {
