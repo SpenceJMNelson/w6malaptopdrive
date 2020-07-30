@@ -127,7 +127,7 @@ h6 {
 }
 
 a.button {
-  padding:.6em 1em;
+  padding:1em 1.6em;
   background:#5e17eb;
   color:#fff;
   border-radius: 100px;
@@ -218,6 +218,11 @@ div.svg-illustration {
   right:0px;
   top:50%;
   transform: translateY(-50%);
+}
+
+body.sponsorship div.svg-illustration {
+  width:40%;
+  right:5%;
 }
 
 div.svg-illustration img{
@@ -319,7 +324,12 @@ span.recognition {
     right:auto;
     top:auto;
     transform: translateY(0%);
-    margin-bottom: 0
+    margin-bottom: 0;
+  }
+  body.sponsorship div.svg-illustration {
+    width:70%;
+    right:auto;
+    margin: 0 auto;
   }
   div.z-fix {
     position:relative;
