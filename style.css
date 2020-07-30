@@ -1,8 +1,14 @@
+@media only screen {
+
 body {
   font-family: 'Poppins', sans-serif;
   background:#5e17eb;
   margin:0;
   color:white;
+}
+
+body.sponsorship {
+  background: #22045e;
 }
 
 section {
@@ -40,7 +46,21 @@ p,li {
   line-height:26px;
 }
 
+body.sponsorship p, body.sponsorship li {
+  font-size:18px;
+  line-height:26px;
+}
+
 p {
+  margin-bottom: 2em
+}
+
+a {
+  color:inherit;
+}
+
+a:hover {
+  opacity:.8;
 }
 
 h1 {
@@ -48,6 +68,10 @@ h1 {
   line-height: 1.1;
   margin: .3em 0;
 
+}
+
+.sponsorship h1 {
+  font-size:7vw;
 }
 
 h1 span {
@@ -81,10 +105,13 @@ h1 span:nth-child(5) {
 
 h2 {
   font-size:3.2rem;
+  color:#fae056;
+  line-height: 1.1
 }
 
 h3 {
   font-size:1.6rem;
+
 }
 
 h6 {
@@ -188,7 +215,7 @@ ul.ul-grid li:nth-child(4){
 }
 
 div.svg-illustration {
-  width:55%;
+  width:53%;
   position:absolute;
   right:0px;
   top:50%;
@@ -244,9 +271,11 @@ div.z-fix {
 }
 
 div.z-fix p{
-  color:#111;
-  font-size: 18px;
-  line-height: 24px
+  color:#111111;
+}
+
+body.sponsorship div.z-fix p{
+  color:#ffffff;
 }
 
 span.description {
@@ -263,6 +292,15 @@ span.amount {
   display: block;
 }
 
+span.recognition {
+  display: block;
+  font-size: 14px;
+  opacity:.8;
+  margin: .6em 0 2em 0;
+  line-height: 1.2;
+}
+
+}
 
 @media only screen and (max-width: 800px) {
   ul.item-list {
@@ -283,10 +321,213 @@ span.amount {
     right:auto;
     top:auto;
     transform: translateY(0%);
+    margin-bottom: 0
   }
   div.z-fix {
     position:relative;
     z-index: 2;
     max-width: 100%;
+  }
+  section#section-1 {
+    padding-bottom:0em;
+  }
+}
+
+@media only print {
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    color:#5e17eb;
+
+  }
+
+  section {
+    padding:2em 2em;
+
+  }
+
+  section#section-1 {
+    background-size: contain;
+    background-position:center right;
+    background-repeat: no-repeat;
+    padding-bottom:5em;
+    position: relative;
+  }
+
+  section#section-2,section#section-3 {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  section#section-4 {
+    padding-bottom: 12em;
+  }
+
+
+
+  section.dark-bg {
+    background: #22045e;
+    text-align: center;
+  }
+
+  p,li {
+    font-size:12px;
+  }
+
+  p {
+    margin-bottom: 2em
+  }
+
+  h1 {
+    font-size:36pt;
+    line-height: 1;
+    margin: .3em 0;
+
+  }
+
+  h2 {
+    font-size:24pt;
+    color:#5e17eb;
+    line-height: 1.1
+  }
+
+  h3 {
+    font-size:18pt;
+
+  }
+
+  h6 {
+    font-size:.8rem;
+    text-transform:uppercase;
+    margin-bottom:-1.6rem;
+    color:#fae056;
+  }
+
+  .backpacks {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  a.button {
+    padding:.6em 1em;
+    background:#5e17eb;
+    color:#fff;
+    border-radius: 100px;
+    text-decoration:none;
+    display:inline-block;
+    text-transform:uppercase;
+    font-weight:700;
+  }
+
+  a.button:hover {
+    background:black;
+  }
+
+  ul.item-list {
+    columns:3;
+    column-gap: 80px;
+    list-style: none;
+    padding:0;
+
+  }
+
+  ul.item-list li {
+    background-image: url(img/check.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: left top;
+    padding-left: 40px;
+    margin-bottom: .6em;
+  }
+
+  ul.ul-columns {
+    list-style:none;
+    padding:0;
+    display:flex;
+    align-items: flex-end;
+  }
+
+  ul.ul-columns li{
+    display:block;
+    width:100%;
+    text-align: center;
+    margin:10px;
+  }
+
+  ul.ul-grid {
+    list-style:none;
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+  }
+
+  ul.ul-grid li:nth-child(4){
+     grid-area: 1 / 2 / 4 / 5;
+  }
+
+  @keyframes badgespin{
+    from {
+      transform:rotate(0deg)
+    }
+    to {
+      transform:rotate(360deg)
+    }
+  }
+
+  #w6-ma-squiggle-border {
+    transform-origin:center;
+    animation:badgespin 60s infinite linear;
+  }
+
+  .w6ma-icon {
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:16%;
+
+  }
+
+  .w6ma-icon svg {
+    width:100%;
+    height:auto;
+  }
+
+  div.svg-illustration {
+    width:53%;
+    position:absolute;
+    right:0px;
+    top:50%;
+    transform: translateY(-50%);
+  }
+
+  div.svg-illustration img{
+    width:100%;
+    height:auto;
+  }
+
+  div.z-fix {
+    position:relative;
+    z-index: 2;
+    max-width: 45%;
+  }
+
+  div.z-fix p{
+    color:#111;
+  }
+
+  span.description {
+    margin-top:1em;
+    display: block;
+    font-weight: bold;
+  }
+
+  span.backpacknumber{
+    display: block;
+  }
+
+  span.amount {
+    display: block;
   }
 }
