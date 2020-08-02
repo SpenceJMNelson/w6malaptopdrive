@@ -237,13 +237,18 @@ div.svg-illustration {
 }
 
 body.sponsorship div.svg-illustration {
-  width:40%;
+  width:45%;
   right:5%;
+  top:0;
+  transform: translateY(0%);
+
 }
 
 div.svg-illustration img{
   width:100%;
   height:auto;
+  max-height: 600px;
+  opacity:.6;
 }
 
 .svg-illustration g{
