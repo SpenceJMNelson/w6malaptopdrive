@@ -329,6 +329,12 @@ span.recognition {
 }
 
 @media only screen and (max-width: 800px) {
+  h2 {
+    font-size:2.2rem;
+    color:#fae056;
+    line-height: 1.1
+  }
+
   ul.item-list {
     columns:1;
     column-gap: 0px;
@@ -361,5 +367,17 @@ span.recognition {
   }
   section#section-1 {
     padding-bottom:0em;
+  }
+
+  span.wcus {
+  display: inline-block;
+  font-size: 1em;
+  background: #5e17eb;
+  color:#fae056;
+  font-weight:900;
+  padding:.2em .4em;
+  border-radius: 10px;
+  transform:rotate(-2deg);
+
   }
 }
