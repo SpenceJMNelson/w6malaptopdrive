@@ -53,7 +53,8 @@ body.sponsorship p, body.sponsorship li {
 }
 
 p {
-  margin-bottom: 2em
+  margin-bottom: 2em;
+  opacity:.96;
 }
 
 a {
@@ -67,7 +68,7 @@ a:hover {
 h1 {
   font-size:8vw;
   line-height: 1.1;
-  margin: .3em 0;
+  margin: 0
 
 }
 
@@ -102,6 +103,18 @@ h1 span:nth-child(4) {
 
 h1 span:nth-child(5) {
   transform:rotate(1deg);
+}
+
+span.wcus {
+display: inline-block;
+font-size: 2em;
+background: #5e17eb;
+color:#fae056;
+font-weight:900;
+padding:.2em .4em;
+border-radius: 10px;
+transform:rotate(-2deg);
+
 }
 
 h2 {
@@ -185,6 +198,8 @@ ul.ul-grid {
 ul.ul-grid li:nth-child(4){
    grid-area: 1 / 2 / 4 / 5;
 }
+
+
 
 @keyframes badgespin{
   from {
