@@ -23,6 +23,7 @@ section#section-1 {
   background-repeat: no-repeat;
   padding-bottom:5em;
   position: relative;
+  color:#5e17eb;
 }
 
 section#section-2,section#section-3 {
@@ -42,7 +43,7 @@ section.dark-bg {
 }
 
 p,li {
-  font-size:21px;
+  font-size:18px;
   line-height:26px;
 }
 
