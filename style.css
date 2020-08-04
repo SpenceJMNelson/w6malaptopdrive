@@ -408,9 +408,17 @@ span.recognition {
     word-break:normal;
   }
 
-  a {
+  p a {
     display: inline-block;
     word-break: break-all;
+  }
+
+  .w6ma-icon {
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:100px;
+
   }
 
 }
