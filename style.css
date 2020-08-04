@@ -1,4 +1,4 @@
-@media only screen {
+
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -149,6 +149,7 @@ a.button {
   display:inline-block;
   text-transform:uppercase;
   font-weight:700;
+  margin: 0px 10px 10px 0px
 }
 
 a.button:hover {
@@ -326,9 +327,9 @@ span.recognition {
   line-height: 1.2;
 }
 
-}
 
 @media only screen and (max-width: 800px) {
+
   h2 {
     font-size:2.2rem;
     color:#fae056;
@@ -369,6 +370,14 @@ span.recognition {
     padding-bottom:0em;
   }
 
+  .w6ma-icon {
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:100px;
+
+  }
+
   span.wcus {
   display: inline-block;
   font-size: 1em;
@@ -380,4 +389,28 @@ span.recognition {
   transform:rotate(-2deg);
 
   }
+}
+
+@media only screen and (max-width: 400px) {
+
+  p,li {
+    font-size: 16px;
+    line-height: 1.2
+  }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  a.button {
+    display: block;
+    text-align: center;
+    word-break:normal;
+  }
+
+  a {
+    display: inline-block;
+    word-break: break-all;
+  }
+
 }
