@@ -32,7 +32,7 @@ section#section-2,section#section-3 {
 }
 
 section#section-4 {
-  padding-bottom: 12em;
+  padding-bottom: 4em;
 }
 
 
@@ -327,6 +327,33 @@ span.recognition {
   line-height: 1.2;
 }
 
+.sponsor-grid {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sponsor-message {
+  text-transform: uppercase;
+  width:100%;
+  text-align: center;
+}
+
+.sponsor-logo {
+  width:20%;
+  padding:10px;
+  box-sizing: border-box;
+}
+
+.sponsor-logo img {
+  width:100%;
+  height: auto;
+}
+
+.max-width {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -420,5 +447,11 @@ span.recognition {
     width:100px;
 
   }
+  .sponsor-logo {
+    width:33%;
+    padding:10px;
+    box-sizing: border-box;
+  }
+
 
 }
